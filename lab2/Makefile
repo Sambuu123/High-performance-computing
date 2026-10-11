@@ -8,9 +8,9 @@ all: scalar_add auto_vec
 
 # Скаляр: ижил -O3, векторжуулалт хаалттай.
 scalar_add: $(SRC)
-	$(CC) $(CFLAGS) -O3 -fno-tree-vectorize -fno-tree-slp-vectorize -fno-unroll-loops $(SRC) -o scalar_add
+	$(CC) $(CFLAGS) -O0 -fno-tree-vectorize -fno-tree-slp-vectorize -fno-unroll-loops $(SRC) -o scalar_add
 
-# Вектор: лабораторийн заавар.
+# Вектор: лабор.
 auto_vec: $(SRC)
 	$(CC) $(CFLAGS) -O3 -march=native $(SRC) -o auto_vec
 

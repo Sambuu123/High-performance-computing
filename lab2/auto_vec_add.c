@@ -4,7 +4,7 @@
 
 /* 80 сая элемент: c[i] = a[i] + b[i], FLOPs/s хэмжинэ. */
 int main(void) {
-    const int n = 80000000;
+    const int n = 8000000;
     double *restrict a = malloc((size_t)n * sizeof(double));
     double *restrict b = malloc((size_t)n * sizeof(double));
     double *restrict c = malloc((size_t)n * sizeof(double));
